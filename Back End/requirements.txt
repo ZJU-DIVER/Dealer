@@ -1,0 +1,14 @@
+django
+django-cors-headers
+django-import-export
+cycler
+matplotlib
+numpy
+pyparsing
+python-dateutil
+pytz
+scipy
+scikit-learn
+six
+xlrd
+tensorflow
