@@ -1,57 +1,13 @@
 body {
-    width: 100%;
-    height: 100%;
-    margin: 0; 
-    padding: 0;
-    /* background-color: rgb(236, 236, 236); */
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-  }
-  
-#root {
-    /* background-color: #348dff; */
-    background-color: #b6c4da !important;
-    /* background-color: rgb(193, 205, 215); */
-    
-  }
-  
-.App {
-    margin: 0 1%;
-    padding: 1% 0 1% 0;
-  }
-  
-.panel {
-      margin: -6% 1% 0 1%;
-}
-  
-.singleDisplayGrid {
-      margin-top: 9%; 
-}
-  
-.optionName {
-    float: left;
-    margin-bottom: 2%;
-    font-weight: bold;
-}
-
-.colorBtn {
-    background-color: #87ade9 !important;
-    border-color: #87ade9 !important;
-}
-
-.cardTop {
-    margin: "0 auto";
-    height: 95.5% !important;
-}
-
-.cardBottom p {
-    transform: rotate(360deg);
 }

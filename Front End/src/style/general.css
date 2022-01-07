@@ -1,0 +1,206 @@
+/* 每一个box */
+.boxall{ 
+    border: 1px solid rgba(25,186,139,.17); 
+    padding: 0 1.3rem .4rem 1.3rem;  
+    /* background: rgba(255,255,255,.04) url(./images/line.png);  */
+    background: rgba(255,255,255,.04); 
+    background-size: 100% auto; 
+    position: relative; 
+    margin-bottom: 1.65rem; 
+    z-index: 1;
+
+}
+.boxall:before, .boxall:after { 
+    position: absolute; 
+    width: .45rem; 
+    height: .45rem; 
+    content: "";  
+    border-top: 2px solid #02a6b5; 
+    top: 0;
+}
+.boxall:before, .boxfoot:before{
+    border-left: 2px solid #02a6b5;
+    left: 0;
+}
+.boxall:after,.boxfoot:after {
+    border-right: 2px solid #02a6b5; 
+    right: 0;
+}
+.boxfoot{ 
+    position:absolute; 
+    bottom: 0; 
+    width: 100%; 
+    left: 0;
+}
+
+.boxfoot:before, .boxfoot:after{ 
+    position:absolute; 
+    width: .45rem; 
+    height: .45rem;  
+    content: "";
+    border-bottom: 2px solid #02a6b5; 
+    bottom: 0;
+}
+
+/* box标题 */
+.alltitle{ 
+    font-size: 1.2rem; 
+    color: #fff; 
+    text-align: center; 
+    line-height: 2.8rem;
+    border-bottom: 1px solid rgba(255,255,255,.2)
+}
+
+/* box身 */
+.allnav{
+    height: calc(100% - 30px);
+}
+
+/* 一小栏 */
+.line { 
+    margin: 1.0rem -1rem 0rem;
+    padding: .16rem 1.3rem ;
+    text-align: center;
+}
+
+.lineTitle { 
+    font-size: 1.0rem;
+    color: #c5ccff;
+    float: left;
+}
+
+.line::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+/* 一小栏 并排三个li */
+.sycm ul { 
+    margin: 0.5rem -1rem;
+    /* margin-right: -1rem;   */
+    padding: .16rem 0;
+}
+.sycm li { 
+    float: left; 
+    width: 33.33%; 
+    text-align: center; 
+    position: relative
+}
+.sycm li:before { 
+    position: absolute; 
+    content: ""; 
+    height: 60%; 
+    width: 1px; 
+    background: rgba(255,255,255,.1); 
+    right: 0; 
+    top: 20%;
+}
+.sycm li:last-child:before { 
+    width: 0;
+}
+.sycm li h2{ 
+    font-size: 1.3rem; 
+    color: #c5ccff;
+}
+.sycm li span { 
+    font-size:.18rem;
+    color: #fff; 
+    opacity: .5;
+}
+
+/* modal框 */
+.modal {
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#modal-root {
+    position: relative;
+    z-index: 99;
+}
+
+.btn-a { border: none; background-color: transparent; color: #fff;}
+.btn-a:hover { color:rgb(115, 140, 196); text-decoration: none!important; cursor: pointer; }
+
+.btn-a-blue {border: none; background-color: transparent; color: #1890ff;}
+.btn-a-blue:hover {color:#0050b3; text-decoration: none!important; cursor: pointer;}
+
+.btn-a-grey {border: none; background-color: transparent; color: #b4b4b4; }
+.btn-a-grey:hover {color:#b4b4b4; text-decoration: none!important; cursor: not-allowed;}
+
+
+.title-a:hover {
+    color:rgb(115, 140, 196); 
+    text-decoration: none!important; 
+    cursor: pointer;
+}
+
+.divider {
+    border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+.tb {
+    background-color: #0B0F2A;
+    margin: 0.5rem 0;
+    position: relative;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.tb_left {
+    float: left;
+}
+
+.tb>table {
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-spacing: 0
+}
+
+.tb>table td {
+    border:none;
+    height: 30px;
+    padding: 0 0.7rem;
+}
+
+.tb_title {
+    color: rgb(255, 255, 255);
+    font-size: 1.0rem;
+}
+
+.tb>table>tbody tr:nth-child(even) {
+    background-color: #1f223c !important;
+}
+
+.tb>table>thead tr {
+    background-color: #1f223c !important;
+}
+
+.close-pop {
+    height: 0.9rem;
+    width: 0.9rem;
+    background: url(../images/close.png) no-repeat;
+    cursor: pointer;
+    float: right;
+}
+
+.popTitle {
+    width: 50rem;
+    height: 2.0rem;
+    line-height: 2.0rem;
+    font-size: 1.5rem;
+    color: white;
+    padding-left: 1.0rem;
+    margin-bottom: 1.5rem;
+    background: url(../images/title_line.png) center left no-repeat;
+}

@@ -1,0 +1,28 @@
+.inputLine {
+    padding: 1.0rem 0 0 0;
+}
+
+.inputLine::before {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.inputP {
+    float: left;
+    width: 45%;
+    text-align: left;
+}
+
+.inputNumber {
+    float: right;
+    width: 55%;
+}
+
+.modalBackModel {
+    height: 30rem;
+    width: 50rem;
+    background: url(../images/popUP_bg.png) no-repeat;
+    background-size: 100% 100%;
+    padding: 3rem 5rem 0rem 5rem;
+}

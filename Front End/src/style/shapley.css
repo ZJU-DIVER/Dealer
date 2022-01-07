@@ -1,0 +1,22 @@
+#svEcharts {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+    margin: auto;
+}
+
+#svEcharts1 {
+    height: 95%;
+    width: 96%;
+    text-align: center;
+    /* background-color: rgba(101,132,226,.1);; */
+    padding: 0 0 1.5rem 0.5rem; 
+    /* background: rgba(255,255,255,.04); */
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+    margin: auto;
+}

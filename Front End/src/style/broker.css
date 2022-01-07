@@ -1,0 +1,93 @@
+.title-box {
+    float: left;
+    width: 60%;
+    height: 1.8rem;
+    background: url(../images/box_title.png) top left no-repeat;
+    background-size: 100% 100%;
+}
+
+.switchBtn {
+    float: left;
+    font-size: 1.0rem;
+    color: white;
+    height: 1.8rem;
+    line-height: 1.6rem;
+    margin-left: 1.6rem;
+}
+
+.title-box span {
+    cursor: pointer;
+    color: rgba(255, 255, 255, .6);
+}
+
+.title-box span.active {
+    color: rgba(255, 255, 255, 1);
+}
+
+/* .title-box>button {
+    font-size: 0.18rem;
+    border: none;
+    background: transparent;
+    color: #cdddf7;
+    height: 0.42rem;
+    position: absolute;
+    right: 0.6rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    cursor: pointer;
+}
+
+.title-box>button:hover {
+    color: white;
+} */
+
+.line-img {
+    width: 0.1rem;
+    height: 1.2rem;
+    margin: 0 0.5rem;
+    line-height: 1.8rem;
+}
+
+.halfLine {
+    width: 50%;
+}
+
+.clearFloat::before {
+    clear: both;
+}
+
+.modalBackPrice {
+    height: 26rem;
+    width: 50rem;
+    background: url(../images/popUP_bg.png) no-repeat;
+    background-size: 100% 100%;
+    padding: 3rem 5rem 0rem 5rem;
+}
+
+.modalBackData {
+    height: 35rem;
+    width: 50rem;
+    background: url(../images/popUP_bg.png) no-repeat;
+    background-size: 100% 100%;
+    padding: 3rem 5rem 0rem 5rem;
+}
+
+.inputBroker {
+    width: 12.95rem;
+    float: right;
+    margin-right: 0.6rem;
+}
+
+.switchBroker {
+    float: right;
+    width: 1rem;
+    margin-top: 0.3rem;
+    margin-right: 1.3rem;
+}
+
+.selectBroker {
+    width: 15.6rem;
+    float: right;
+    margin-right: 1.0rem;
+}

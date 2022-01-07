@@ -1,39 +1,90 @@
+/* @charset "utf-8"; */
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}*
 
-.App {
-  text-align: center;
+body { 
+    background: #000d4a url(./images/bg.jpg) center top; 
+    /* background:#000d4a;  */
+    background-size: cover;
+    padding: 0px;	
+    margin: 0px;
+    height: 52rem;
+}
+@font-face {
+    font-family: electronicFont;
+    src:url(./font/DS-DIGIT.TTF)
+}
+li { list-style-type: none;}
+/* table {} */
+i { margin:0px; padding:0px; text-indent:0px;}
+img { border:none; max-width: 100%;}
+a { text-decoration:none; color:#399bff;}
+a.active, a:focus { outline:none!important; text-decoration:none; }
+a:hover { color:#06c; text-decoration: none!important; cursor: pointer;}
+ol, ul, p, h1, h2, h3, h4, h5, h6 { padding:0; }
+
+
+/*谷哥滚动条样式*/
+::-webkit-scrollbar {width:5px;height:5px;position:absolute}
+::-webkit-scrollbar-thumb {background-color:#5bc0de}
+::-webkit-scrollbar-track {background-color:#ddd}
+
+/* 背景动效 */
+.canvas{position: absolute; width:100%; left: 0; top: 0; height: 100%; z-index: 1;}
+
+/* 大标题 */
+.head { 
+    height: 4.65rem; 
+    background: url(./images/head_bg.png) no-repeat center center; 
+    background-size: 100% 100%; 
+    position: relative; 
+    z-index: 1;
+    vertical-align: middle;
+}
+.head h1 { 
+    color:#fff; 
+    text-align: center; 
+    font-size: 2rem; 
+    line-height: 3.5rem;
+}
+.head h1 img { 
+    width:1.5rem; 
+    display: inline-block; 
+    vertical-align: middle; 
+    margin-right: .2rem
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.weather{ position:absolute; right:1.3rem; top:0; line-height: 3rem;}
+.weather img{ width:.37rem; display: inline-block; vertical-align: middle;}
+.weather span{color:rgba(255,255,255,.7); font-size: .18rem; padding-right: .1rem;}
+
+.mainbox { 
+    padding: .4rem .4rem 0rem .4rem; 
+    /* padding: 0.4rem auto 0; */
+    margin: auto;
+    text-align: center;
+}
+/* .mainbox>ul{} */
+.mainbox>ul>li { 
+    float: left; 
+    padding: 0 0.5rem; 
+    width: 30%
+}
+.mainbox>ul>li:nth-child(2) { 
+    width: 40%; 
+    padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* 去除浮动 */
+.clearfix:after, .clearfix:before {
+	display: table;
+	content: " "
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.clearfix:after {
+	clear: both;
 }

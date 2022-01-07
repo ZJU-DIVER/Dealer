@@ -1,0 +1,54 @@
+.inputLine {
+    padding: 1.0rem 0 0 0;
+}
+
+.inputLine::before {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.inputP {
+    float: left;
+    width: 40%;
+    text-align: left;
+}
+
+.inputNumber {
+    float: right;
+    width: 60%;
+}
+
+.selectInput {
+    background-color: rgba(200, 18, 18, 0.04);
+    color: white;
+    opacity: 1;
+    width: 56%;
+    border-radius: 5px;
+    height: 1.5rem;
+} 
+
+.switchLine {
+    float: left;
+    padding-top: 3%;
+    text-align: left;
+}
+
+.switch {
+    float: left;
+    width: 5%;
+    margin-top: 0.3rem;
+}
+
+.switchLine>p {
+    float: right;
+    width: 88%;
+}
+
+.modalBackSelect {
+    height: 40rem;
+    width: 60rem;
+    background: url(../images/popUP_bg.png) no-repeat;
+    background-size: 100% 100%;
+    padding: 3rem 5rem 0rem 5rem;
+}
